@@ -1,8 +1,8 @@
 'use strict'
 function isEnoughCapacity(products, containerSize) {
   let values = [];
-  const keys = Object.keys(products),
-  for (const key of keys) {
+  const keys = Object.values(products);
+  for (const values of keys) {
     values.push(products[key])
   }
   for (let i = 0; i < values.length; i++){

@@ -1,21 +1,14 @@
 'use strict'
 function isEnoughCapacity(products, containerSize) {
-  let values = [];
-  const keys = Object.values(products);
-  for (const values of keys) {
-    values.push(products[key])
-  }
-  for (let i = 0; i < values.length; i++){
-    sum += values[i];
-  }
-  if (values <= containerSize) {
-    console.log(true);
+  let sum = 0;
+  const values = Object.values(products);
 
-  } else {
-    console.log(false);
+  for (const quantity of values) {
+    sum += quantity;
   }
-  return isEnoughCapacity;
- }
+
+  return sum <= containerSize;
+}
 
 console.log(
   isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)

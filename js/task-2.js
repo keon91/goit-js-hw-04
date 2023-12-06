@@ -1,19 +1,12 @@
 'use strict'
 function calcAverageCalories(days) {
-    let sumCalDays = 0;
-    let dayQuntaty = 0;
-    let sumDays = 0;
-    const keys = Object.keys(days)
-    for (dayQuntaty of keys) {
-        sumDays += dayQuntaty;
+    let totalCal = 0;
+    for (const day of days) {
+        totalCal += day.calories;
     }
-    const values = Object.values(days)
-    for (const quantaty of values) {
-        sumCalDays += quantaty;
-    }
-    return sumCalDays / sumDays;
+    const averageCalories = days.length > 0 ? totalCal / days.length : 0;
+   return averageCalories;
 }
-
 console.log(
   calcAverageCalories([
     { day: "monday", calories: 3010 },

@@ -1,5 +1,13 @@
 'use strict'
+const profile = {
+    username: "Jacob",
+    playTime: 300,
+};
+changeUsername(newName)
 
+updatePlayTime(hours)
+
+getInfo() `${Username} as ${amount} active hours!`
 
 console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 

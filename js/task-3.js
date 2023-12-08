@@ -1,14 +1,19 @@
 'use strict'
+let amount = 0;
 const profile = {
     username: "Jacob",
     playTime: 300,
 };
-changeUsername(newName)
+changeUsername(newName) = {
+    profile.username
+}
 
-updatePlayTime(hours)
+updatePlayTime(hours) = {
+    let amount += profile.playtime
+}
 
 getInfo() `${Username} as ${amount} active hours!`
-
+ 
 console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
 profile.changeUsername("Marco");
